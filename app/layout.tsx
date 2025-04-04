@@ -22,6 +22,7 @@ export const metadata: Metadata = {
   keywords: ['design agency', 'web design', 'branding', 'digital marketing', 'UI/UX design'],
   authors: [{ name: 'Studio Spark Team' }],
   creator: 'Studio Spark',
+  manifest: '/manifest.json',
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -84,7 +85,6 @@ export default function RootLayout({
         />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/manifest.json" />
       </head>
       <body className={`${inter.variable} ${spaceGrotesk.variable} font-sans antialiased`}>
         <ErrorBoundary FallbackComponent={ErrorPage}>
